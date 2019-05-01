@@ -1,7 +1,21 @@
 body {
   font-family: Helvetica;
+  margin: 25px;
 }
 
-.app {
-  margin: 25px;
+.flag {
+  padding-left: 7.5px;
+  cursor: pointer;
+}
+
+.form {
+  padding: 25px 0px;
+
+  label {
+    padding-right: 5px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
 }

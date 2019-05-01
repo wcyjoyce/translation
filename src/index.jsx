@@ -5,6 +5,6 @@ import App from "./components/app.jsx";
 import "../assets/stylesheets/application.scss";
 
 ReactDOM.render(
-  <div className="app"><App /></div>,
+  <App />,
   document.getElementById("root")
 );
