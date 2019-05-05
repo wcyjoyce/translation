@@ -9,10 +9,12 @@ body {
 }
 
 .form {
-  padding: 25px 0px;
+  padding: 15px 0px;
 
   label {
-    padding-right: 5px;
+    display: inline-block;
+    width: 45px;
+    padding: 10px 0px;
   }
 
   button {
