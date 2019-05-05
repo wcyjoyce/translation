@@ -18,15 +18,15 @@ import ColourContext from "../../contexts/colour_context.js";
   // A function must be passed into a consumer as a child, which will then be invoked to get information out of the context objective
   // Main benefits of using Consumers - ability to use information out of multiple context objects (vs single context object via this.context)
 class Button extends Component {
-  renderSubmit(value) {
-    return value === "english" ? "Submit" : "提交"
+  renderSubmit(language) {
+    return language === "english" ? "Submit" : "提交"
   };
 
   renderButton(colour) {
     return (
       <button className={`ui button ${colour}`}>
         <LanguageContext.Consumer>
-          {value => this.renderSubmit(value)}
+          {({ language }) => this.renderSubmit(language)}
         </LanguageContext.Consumer>
       </button>
     );
